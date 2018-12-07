@@ -30,3 +30,6 @@ Sample data is also given which is created from MNIST database
 In the data file, each data-point occur in each line. The values are separated by space and the last value is the label.
 
 The weight matrix file contains each row in one line and in between two matrices, they are separated by two lines.
+### The weight matrix is that matrix for which minimum error has occured on the training set which is also displayed at the last as minimum error
+### During calculation of cost function , the one with the assigned label and ones with values greater than the assigned label are kept. All others are intentionally ignored by making them zero and then applying Back-Prop Algorithm so that they do not effect the weight gradients. This is done as during prediction , the one with the highest value among the output nodes is taken.
+### Learning rate during entire training is kept constant.
